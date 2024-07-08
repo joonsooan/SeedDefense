@@ -98,8 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5a9bee6810a534da379140b509b524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalColor: {r: 1, g: 0.7686275, b: 0.49803925, a: 1}
-  newColor: {r: 1, g: 0.9611738, b: 0.49803925, a: 1}
+  originalColor: {r: 1, g: 0.78060293, b: 0.42075467, a: 1}
+  newColor: {r: 0.91617286, g: 1, b: 0.53396225, a: 1}
+  currentPlant: {fileID: 0}
 --- !u!61 &2432206823785253691
 BoxCollider2D:
   m_ObjectHideFlags: 0
