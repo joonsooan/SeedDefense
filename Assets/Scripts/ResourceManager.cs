@@ -34,6 +34,7 @@ public class ResourceManager : MonoBehaviour
     public void AddWater(int amount)
     {
         waterCount += amount;
+        Debug.Log($"Current Water: {waterCount}");
         // 물 추가 로직
     }
 

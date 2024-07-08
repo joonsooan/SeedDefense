@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6018932623554564767}
   - component: {fileID: 9183086749131423545}
   - component: {fileID: 7539546620052934677}
+  - component: {fileID: 4105083279738932901}
   m_Layer: 0
   m_Name: Water Plant
   m_TagString: Untagged
@@ -97,3 +98,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a770eca46ba9e204ea87af3f9c3655af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effectInterval: 1
+--- !u!58 &4105083279738932901
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612190706034461490}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

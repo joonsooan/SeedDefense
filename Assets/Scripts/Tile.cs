@@ -4,25 +4,34 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    private PlantBase currentPlant;
+    private SpriteRenderer spriteRenderer;
+    public Color originalColor;
+    public Color newColor;
 
-    private void OnMouseDown()
+    void Start()
     {
-        if (currentPlant == null)
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
         {
-            PlacePlant();
+            originalColor = spriteRenderer.color;
         }
     }
 
-    private void PlacePlant()
+    void OnMouseDown()
     {
-        // 여기서 식물 프리팹을 생성하여 배치합니다.
-        // 예를 들어, SeedPlant 프리팹을 배치하려면:
-        GameObject plantPrefab = Resources.Load<GameObject>("SeedPlant"); // 식물 프리팹을 Resources 폴더에서 로드합니다.
-        if (plantPrefab != null)
+        Debug.Log("Tile clicked!");
+        if (spriteRenderer != null)
         {
-            GameObject plantInstance = Instantiate(plantPrefab, transform.position, Quaternion.identity);
-            currentPlant = plantInstance.GetComponent<PlantBase>();
+            // 클릭하면 타일의 색상을 바꿉니다.
+            spriteRenderer.color = newColor;
+        }
+    }
+
+    public void ResetColor()
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = originalColor;
         }
     }
 }

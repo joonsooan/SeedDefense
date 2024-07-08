@@ -31,6 +31,13 @@ public class GridManager : MonoBehaviour
                 {
                     sr.color = tileColor;
                 }
+
+                // 타일에 Tile 스크립트를 추가하고 초기 색상을 설정합니다.
+                Tile tileScript = tile.GetComponent<Tile>();
+                if (tileScript != null)
+                {
+                    tileScript.ResetColor();
+                }
             }
         }
     }
