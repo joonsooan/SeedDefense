@@ -19,15 +19,23 @@ public class Tile : MonoBehaviour
         }
     }
 
+    // 타일 클릭 시 색상 변경
+    // void OnMouseDown()
+    // {
+    //     Debug.Log("Tile clicked!");
+
+    //     if (spriteRenderer != null)
+    //     {
+    //         spriteRenderer.color = newColor;
+    //     }
+
+    //     // 선택된 식물을 타일에 배치
+    //     PlantManager.Instance.PlacePlant(this);
+    // }
+
     void OnMouseDown()
     {
         Debug.Log("Tile clicked!");
-
-        // 타일 색상 변경 (선택 시 시각적 피드백을 위한 코드)
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = newColor;
-        }
 
         // 선택된 식물을 타일에 배치
         PlantManager.Instance.PlacePlant(this);
