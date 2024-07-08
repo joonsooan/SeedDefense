@@ -37,15 +37,22 @@ public class Tile : MonoBehaviour
     {
         Debug.Log("Tile clicked!");
 
-        // 선택된 식물을 타일에 배치
-        PlantManager.Instance.PlacePlant(this);
+        if (PlantManager.Instance != null)
+        {
+            PlantManager.Instance.PlacePlant(this);
+            Debug.Log("타일 클릭 후 식물 배치완료");
+        }
+        else
+        {
+            Debug.LogWarning("PlantManager.Instance is null!");
+        }
     }
 
     public void PlacePlant(GameObject plantPrefab)
     {
         if (currentPlant == null)
         {
-            currentPlant = Instantiate(plantPrefab, transform.position, Quaternion.identity);
+            currentPlant = plantPrefab;
             currentPlant.transform.SetParent(transform);
         }
     }

@@ -30,11 +30,29 @@ public class PlantManager : MonoBehaviour
 
     public void PlacePlant(Tile tile)
     {
+        Debug.Log($"Selected Plant Index: {selectedPlantIndex}");
+
         if (selectedPlantIndex != -1 && tile != null)
         {
             GameObject selectedPrefab = plantPrefabs[selectedPlantIndex];
-            tile.PlacePlant(selectedPrefab);
+            Debug.Log("Selected plant prefab: " + selectedPrefab.name);
+
+            GameObject plant = Instantiate(selectedPrefab, tile.transform.position, Quaternion.identity);
+            if (plant != null)
+            {
+                Debug.Log("Plant instantiated successfully at: " + tile.transform.position);
+                tile.PlacePlant(plant);
+            }
+            else
+            {
+                Debug.LogError("Failed to instantiate plant prefab!");
+            }
+
             selectedPlantIndex = -1; // 한 번 배치한 후 선택 해제
+        }
+        else
+        {
+            Debug.LogWarning("No plant selected or tile is null");
         }
     }
 }
