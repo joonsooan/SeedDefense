@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -654,15 +654,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423948355615304522, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.013291391
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8423948355615304522, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18595959
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8423948355615304522, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.043491043
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8423948355615304522, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -795,7 +795,7 @@ PrefabInstance:
       objectReference: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -970,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

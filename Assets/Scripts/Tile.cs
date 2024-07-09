@@ -4,14 +4,14 @@ public class Tile : MonoBehaviour
 {
     public GameObject currentPlant;
 
-    void OnMouseDown()
+    private void OnMouseDown()
     {
         Debug.Log("Tile clicked!");
 
         if (PlantManager.Instance != null)
         {
             PlantManager.Instance.PlacePlant(this);
-            Debug.Log("Tile clicked and plant placed");
+            Debug.Log("Plant placement attempted after tile click");
         }
         else
         {
@@ -27,6 +27,6 @@ public class Tile : MonoBehaviour
         }
 
         currentPlant = plant;
-        Debug.Log($"PlacePlant() - Plant placed at {transform.position}");
+        Debug.Log($"Plant placed on tile at position: {transform.position}");
     }
 }

@@ -58,7 +58,15 @@ public class PlantManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No plant selected or tile is null");
+            if (selectedPlantIndex == -1)
+            {
+                Debug.LogWarning("No plant selected");
+            }
+            if (tile == null)
+            {
+                Debug.LogWarning("Tile is null");
+            }
         }
     }
+
 }
