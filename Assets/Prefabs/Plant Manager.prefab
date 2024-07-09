@@ -48,3 +48,4 @@ MonoBehaviour:
   - {fileID: 5376473782804232324, guid: cd2047e360ce64440baa5b34ffde2e81, type: 3}
   - {fileID: 2612190706034461490, guid: 9944eaa54a87af84193232de9f301761, type: 3}
   - {fileID: 7467183259562465273, guid: a4d0c4a7eebbfb5438e9633ad818e791, type: 3}
+  selectedPlantIndex: -1
