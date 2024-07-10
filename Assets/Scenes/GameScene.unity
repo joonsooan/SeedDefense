@@ -422,10 +422,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 935788734}
     m_Modifications:
-    - target: {fileID: 526182912193793246, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.800003
-      objectReference: {fileID: 0}
     - target: {fileID: 1922764579063048294, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -510,31 +506,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water Plant Button
       objectReference: {fileID: 0}
-    - target: {fileID: 3284619294606549320, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_text
-      value: Water Plant
+    - target: {fileID: 6992364213991987522, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1725757009}
+    - target: {fileID: 6992364213991987522, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: plantType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectPlant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9058356966926581730, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_Name
-      value: Water Plant Text
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 2042466480}
+    m_RemovedComponents:
+    - {fileID: 8767859675816505674, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+    - {fileID: 8898121704281497743, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -644,10 +630,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
-      propertyPath: selectedPlantIndex
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 7472442161025254997, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
       propertyPath: m_Name
       value: Plant Manager
@@ -697,6 +679,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
+--- !u!114 &1725757009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+  m_PrefabInstance: {fileID: 1130233095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1956561629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+  m_PrefabInstance: {fileID: 1008148539316614863}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1978111951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,19 +793,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buff Plant Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3284619294606549320, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: m_text
+      value: Buff Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992364213991987522, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 2073882972}
+    - target: {fileID: 6992364213991987522, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: plantType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
+      objectReference: {fileID: 2042466480}
+    - target: {fileID: 9058356966926581730, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: m_Name
+      value: Buff Plant Text
       objectReference: {fileID: 0}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectPlant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8767859675816505674, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+    - {fileID: 8898121704281497743, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -868,6 +882,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 114b5191d14068b47b1fcc8d7ee750ca, type: 3}
+--- !u!114 &2042466480 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
+  m_PrefabInstance: {fileID: 1709107473}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d0d52d427aade44a2bf56e54f0e1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2073882972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+  m_PrefabInstance: {fileID: 1978111951}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1008148539316614863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -964,27 +1000,25 @@ PrefabInstance:
       propertyPath: m_text
       value: Seed Plant
       objectReference: {fileID: 0}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 6992364213991987522, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: button
       value: 
-      objectReference: {fileID: 4788620614012411302, guid: 7f3ae554980641245b40eb381090b3c0, type: 3}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      objectReference: {fileID: 1956561629}
+    - target: {fileID: 6992364213991987522, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+      propertyPath: plantType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectPlant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952792909969864450, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2042466480}
     - target: {fileID: 9058356966926581730, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
       propertyPath: m_Name
       value: Seed Plant Text
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8767859675816505674, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
+    - {fileID: 8898121704281497743, guid: 8a76351371a813f4f8e69833fd4e8ef9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

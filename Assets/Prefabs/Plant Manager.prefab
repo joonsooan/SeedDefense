@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 7472442161025254997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.013291391, y: 0.18595959, z: 0.043491043}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48,4 +48,4 @@ MonoBehaviour:
   - {fileID: 5376473782804232324, guid: cd2047e360ce64440baa5b34ffde2e81, type: 3}
   - {fileID: 2612190706034461490, guid: 9944eaa54a87af84193232de9f301761, type: 3}
   - {fileID: 7467183259562465273, guid: a4d0c4a7eebbfb5438e9633ad818e791, type: 3}
-  selectedPlantIndex: -1
+  selectedPlant: 0

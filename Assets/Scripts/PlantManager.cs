@@ -1,11 +1,19 @@
 using UnityEngine;
 
+public enum PlantType
+{
+    None,
+    SeedPlant,
+    WaterPlant,
+    BuffPlant
+}
+
 public class PlantManager : MonoBehaviour
 {
     public static PlantManager Instance;
 
-    public GameObject[] plantPrefabs; // 배열로 여러 식물 프리팹을 관리
-    public int selectedPlantIndex = -1; // 선택된 식물 인덱스
+    public GameObject[] plantPrefabs; // 여러 식물 프리팹 관리 배열
+    public PlantType selectedPlant = PlantType.None; // 선택된 식물 타입
 
     private void Awake()
     {
@@ -13,7 +21,6 @@ public class PlantManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            Debug.Log("PlantManager instance created");
         }
         else
         {
@@ -21,26 +28,19 @@ public class PlantManager : MonoBehaviour
         }
     }
 
-    public void SelectPlant(int plantIndex)
+    public void SelectPlant(PlantType plantType)
     {
-        if (plantIndex >= 0 && plantIndex < plantPrefabs.Length)
-        {
-            selectedPlantIndex = plantIndex;
-            Debug.Log($"SelectPlant() - Selected Plant Index: {selectedPlantIndex}");
-        }
-        else
-        {
-            Debug.LogWarning($"Invalid plant index selected: {plantIndex}");
-        }
+        selectedPlant = plantType;
+        Debug.Log($"SelectPlant() - Selected Plant: {selectedPlant}");
     }
 
     public void PlacePlant(Tile tile)
     {
-        Debug.Log($"PlacePlant() - Selected Plant Index: {selectedPlantIndex}");
+        Debug.Log($"PlacePlant() - Selected Plant: {selectedPlant}");
 
-        if (selectedPlantIndex != -1 && tile != null)
+        if (selectedPlant != PlantType.None && tile != null)
         {
-            GameObject selectedPrefab = plantPrefabs[selectedPlantIndex];
+            GameObject selectedPrefab = plantPrefabs[(int)selectedPlant - 1]; // None이 인덱스 0이므로 -1 해줌
             Debug.Log($"Selected plant prefab: {selectedPrefab.name}");
 
             GameObject plant = Instantiate(selectedPrefab, tile.transform.position, Quaternion.identity);
@@ -54,11 +54,11 @@ public class PlantManager : MonoBehaviour
                 Debug.LogError("Failed to instantiate plant prefab!");
             }
 
-            selectedPlantIndex = -1; // 한 번 배치한 후 선택 해제
+            // selectedPlant = PlantType.None; // 한 번 배치한 후 선택 해제
         }
         else
         {
-            if (selectedPlantIndex == -1)
+            if (selectedPlant == PlantType.None)
             {
                 Debug.LogWarning("No plant selected");
             }
@@ -68,5 +68,4 @@ public class PlantManager : MonoBehaviour
             }
         }
     }
-
 }
